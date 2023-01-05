@@ -1,21 +1,35 @@
 import React, {useState} from 'react';
 import './App.css';
 import {v1} from 'uuid';
+import {Todolist} from './Todolist';
 
 
 function App() {
-    const [tasks, setTasks] = useState([
+
+    let [tasks,setTask] = useState( [
         {id: v1(), title: 'HTML & CSS', isDone: true},
         {id: v1(), title: 'ES6 & TS', isDone: true},
         {id: v1(), title: 'REACT', isDone: false},
-    ]
-}
+    ])
 
-return (
-    <div className="App">
+const removeTask = (id: string) => {
+        setTask(tasks.filter(el => el.id !== id))
+     }
+     const filterTask = () => {
+     if ()
+     }
 
-    </div>
-);
+
+
+
+    return (
+        <div className="App">
+            <Todolist title='123'
+                      tasks={tasks}
+                      removeTask={removeTask}
+            />
+        </div>
+    );
 }
 
 export default App;
