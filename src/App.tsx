@@ -13,18 +13,23 @@ function App() {
         {id: v1(), title: 'REACT', isDone: false},
     ])
 
+    const addTask = (inputValue: string) => {
+        let newTask = {id: v1(), title: inputValue, isDone: false}
+            setTask([newTask, ...tasks])
+    }
+
       const removeTask = (id: string) => {
         setTask(tasks.filter(el => el.id !== id))
     }
 
     let [filter, setFilter] = useState<FilterValuesType>('all')
 
-    let filter2 = tasks
+    let tasksForTodolist = tasks
     if (filter === 'active') {
-        filter2 = tasks.filter((el) => !el.isDone)
+        tasksForTodolist = tasks.filter((el) => !el.isDone)
     }
     if (filter === 'completed') {
-        filter2 = tasks.filter((el) => el.isDone)
+        tasksForTodolist = tasks.filter((el) => el.isDone)
     }
     const taskFilter = (filterValue: FilterValuesType) => {
         setFilter(filterValue)
@@ -34,9 +39,10 @@ function App() {
     return (
         <div className="App">
             <Todolist title="123"
-                      tasks={filter2}
+                      tasks={tasksForTodolist}
                       removeTask={removeTask}
                       taskFilter={taskFilter}
+                      addTask={addTask}
 
 
             />

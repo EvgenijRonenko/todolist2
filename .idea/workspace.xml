@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99105717-46f5-40e8-b348-bfa52db17c88" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/Components/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -62,7 +63,10 @@
       <workItem from="1673451888035" duration="5396000" />
       <workItem from="1673510390721" duration="2021000" />
       <workItem from="1673522747351" duration="1394000" />
-      <workItem from="1673591923212" duration="317000" />
+      <workItem from="1673591923212" duration="14175000" />
+      <workItem from="1673620728475" duration="2787000" />
+      <workItem from="1673637080427" duration="595000" />
+      <workItem from="1673789145155" duration="1186000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1672214641764</created>
@@ -99,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673521936879</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1">
+      <created>1673592583139</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673592583139</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
