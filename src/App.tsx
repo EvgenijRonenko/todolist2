@@ -13,6 +13,10 @@ function App() {
         {id: v1(), title: 'REACT', isDone: false},
     ])
 
+    const checkBoxChange = (id: string, checkedValue: boolean) => {
+
+    }
+
     const addTask = (inputValue: string) => {
         let newTask = {id: v1(), title: inputValue, isDone: false}
             setTask([newTask, ...tasks])
@@ -43,6 +47,7 @@ function App() {
                       removeTask={removeTask}
                       taskFilter={taskFilter}
                       addTask={addTask}
+                      checkBoxChange={checkBoxChange}
 
 
             />
