@@ -26,6 +26,7 @@ setTask([...tasks,task.map(el=>el.id===newId ? : tasks)])
         setTask(tasks.filter(el => el.id !== id))
     }
 
+
     let [filter, setFilter] = useState<FilterValuesType>('all')
 
     let tasksForTodolist = tasks
