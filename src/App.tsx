@@ -13,8 +13,8 @@ function App() {
         {id: v1(), title: 'REACT', isDone: false},
     ])
 
-    const checkBoxChange = (id: string, checkedValue: boolean) => {
-
+    const checkBoxChange = (newId: string, checkedValue: boolean) => {
+setTask([...tasks,task.map(el=>el.id===newId ? : tasks)])
     }
 
     const addTask = (inputValue: string) => {

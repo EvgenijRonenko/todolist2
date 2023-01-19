@@ -1,6 +1,6 @@
 import {FilterValuesType} from './App';
 import {ChangeEvent, KeyboardEvent, useState} from 'react';
-import {Button} from './Components/Button';
+
 
 
 type TasksType = {
@@ -60,7 +60,7 @@ export const Todolist = (props: TodolistPropsType) => {
             <ul>
                 {props.tasks.map(t => {
                 const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-                  //event.currentTarget.checked
+                  props.checkBoxChange(t.id,event.currentTarget.checked)
                     }
                         return (
                             <li key={t.id}>

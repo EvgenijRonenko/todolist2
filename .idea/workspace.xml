@@ -37,7 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/learnJS/react/todolist2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/learnJS/final project&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\learnJS\\react\\todolist2\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -68,6 +68,9 @@
       <workItem from="1673789145155" duration="1186000" />
       <workItem from="1673882712373" duration="5766000" />
       <workItem from="1673938854523" duration="593000" />
+      <workItem from="1673971126231" duration="2871000" />
+      <workItem from="1674029388792" duration="1143000" />
+      <workItem from="1674111681000" duration="3657000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1672214641764</created>
@@ -118,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673884094128</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1">
+      <created>1673971374848</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673971374848</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
