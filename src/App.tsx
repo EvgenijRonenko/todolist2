@@ -14,7 +14,7 @@ function App() {
     ])
 
     const checkBoxChange = (newId: string, checkedValue: boolean) => {
-        setTask([...tasks, tasks.map(el=>el.id===newId ? {...el,isDone: checkedValue} : tasks)])
+        setTask(tasks.map(el=>el.id===newId ? {...el,isDone: checkedValue} : el))
     }
 
     const addTask = (inputValue: string) => {

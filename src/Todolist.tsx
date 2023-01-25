@@ -24,8 +24,10 @@ export const Todolist = (props: TodolistPropsType) => {
     let [inputValue, setInputValue] = useState('')
 
     const addTaskHandler = () => {
-        props.addTask(inputValue)
+        if(inputValue.trim() !== '') {
+        props.addTask(inputValue.trim())
         setInputValue('')
+        }
     }
 
     const onChangeInputHandler = (event: ChangeEvent<HTMLInputElement>) => {
