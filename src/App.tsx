@@ -17,6 +17,7 @@ function App() {
         setTask(tasks.map(el=>el.id===newId ? {...el,isDone: checkedValue} : el))
     }
 
+
     const addTask = (inputValue: string) => {
         let newTask = {id: v1(), title: inputValue, isDone: false}
             setTask([newTask, ...tasks])
