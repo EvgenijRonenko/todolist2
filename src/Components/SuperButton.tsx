@@ -9,7 +9,7 @@ type SuperButtonPropsType = {
 }
 
 export const SuperButton: React.FC<SuperButtonPropsType> = (props) => {
-    const {callback, color, children, ...otherProps} = props
+    const {callback, color, children, disabled, ...otherProps} = props
     const finalClassName = `
     ${s.button} 
     ${color=== 'red' ? s.red : color==='secondary'? s.secondary : s.default} 
