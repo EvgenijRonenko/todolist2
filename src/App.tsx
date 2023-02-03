@@ -1,60 +1,21 @@
 import React, {useState} from 'react';
 import './App.css';
-import {v1} from 'uuid';
-import {Todolist} from './Todolist';
+import {SuperButton} from './components/SuperButton';
 
-export type FilterValuesType = 'all' | 'active' | 'completed'
+
+
+
 
 function App() {
-
-    let [tasks, setTask] = useState([
-        {id: v1(), title: 'HTML & CSS', isDone: true},
-        {id: v1(), title: 'ES6 & TS', isDone: true},
-        {id: v1(), title: 'REACT', isDone: false},
-    ])
-
-    const checkBoxChange = (newId: string, checkedValue: boolean) => {
-        setTask(tasks.map(el=>el.id===newId ? {...el,isDone: checkedValue} : el))
-    }
-
-
-    const addTask = (inputValue: string) => {
-        let newTask = {id: v1(), title: inputValue, isDone: false}
-            setTask([newTask, ...tasks])
-    }
-
-      const removeTask = (id: string) => {
-        setTask(tasks.filter(el => el.id !== id))
-    }
-
-
-    let [filter, setFilter] = useState<FilterValuesType>('all')
-
-    let tasksForTodolist = tasks
-    if (filter === 'active') {
-        tasksForTodolist = tasks.filter((el) => !el.isDone)
-    }
-    if (filter === 'completed') {
-        tasksForTodolist = tasks.filter((el) => el.isDone)
-    }
-    const taskFilter = (filterValue: FilterValuesType) => {
-        setFilter(filterValue)
-    }
-
-
     return (
-        <div className="App">
-            <Todolist title="123"
-                      tasks={tasksForTodolist}
-                      removeTask={removeTask}
-                      taskFilter={taskFilter}
-                      addTask={addTask}
-                      checkBoxChange={checkBoxChange}
-
-
-            />
+        <div>
+            <SuperButton callback={()=>{}} color={'red'}>Red Super Button</SuperButton>
+            <SuperButton callback={()=>{}}>Red Super Button</SuperButton>
+            <SuperButton callback={()=>{}} color={'secondary'} disabled>Red Super Button</SuperButton>
         </div>
     );
 }
+
+
 
 export default App;
